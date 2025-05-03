@@ -29,25 +29,16 @@ const globalError = require('./middlwares/errorMidlware copy');
 const AppError = require('./utils/appError');
 const { fileAccess } = require('./models');
 
-
-// app.use(express.static(path.join(__dirname ,'uploads' )));
-
-
-
-// app.use('/api/v1/users' , userRouter )      ; 
+    ; 
 app.use('/api/v1/auth' ,  authRouter )      ; 
 app.use('/api/v1/files' ,  fileRouter) ; 
 app.use('/api/v1/fileAccess' , fileAcessRouter) ; 
-// app.use('/api/v1/favorites' ,  favoriteRouter ) ; 
-// app.use('/api/v1/addresses' ,  addressRouter ) ; 
-// app.use('/api/v1/reviews/1' ,   ) ; 
 
 
 
 app.use(globalError) ;
 
 app.all("*" , (req , res , next) => {
-    //creat error and send it to error hundling middlware  
     const appError = new AppError( `Can't find this route : ${req.originalUrl}` ,400 , httpstatusText.ERROR ); 
     next(appError) ; 
 
