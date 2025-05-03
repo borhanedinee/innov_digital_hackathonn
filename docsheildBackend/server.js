@@ -1,5 +1,4 @@
 
-// const path = require('path') ; 
 const httpstatusText = require('./utils/httpStatusText')
 const express = require('express') ; 
 const dotenv = require("dotenv") ; 
