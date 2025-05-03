@@ -1,0 +1,31 @@
+// {
+//     "extends": ["airbnb", "prettier", "plugin:node/recommended"],
+//     "plugins": ["prettier"],
+//     "rules": {
+//       // Disable less critical rules
+//       "spaced-comment": "off",
+//       "no-console": "off",
+//       "consistent-return": "off",
+//       "func-names": "off",
+//       "object-shorthand": "off",
+//       "no-process-exit": "off",
+//       "no-param-reassign": "off",
+//       "no-return-await": "off",
+//       "no-underscore-dangle": "off",
+//       "class-methods-use-this": "off",
+//       "prefer-destructuring": ["error", { "object": true, "array": false }],
+//       "no-unused-vars": ["warn", { "argsIgnorePattern": "req|res|next|val" }],
+  
+//       // Enable only critical rules
+//       "no-undef": "error", // Show errors for undeclared variables
+//       "node/no-missing-require": "off", // Disable "require is not defined" errors
+//       "node/no-unsupported-features/es-syntax": "off", // Disable ES module syntax errors
+//       "node/no-unpublished-require": "off", // Disable "unpublished require" errors
+//       "import/no-unresolved": "off", // Disable "unresolved import" errors
+//       "import/extensions": "off" // Disable "missing file extension" errors
+//     },
+//     "env": {
+//       "node": true, // Enable Node.js global variables (e.g., `require`)
+//       "es2021": true // Enable ES2021 features
+//     }
+//   }
